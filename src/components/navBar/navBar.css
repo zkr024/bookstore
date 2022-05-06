@@ -1,0 +1,14 @@
+.navContainer,
+.nav {
+  display: flex;
+}
+
+.nav {
+  list-style: none;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  margin-right: 10px;
+}
