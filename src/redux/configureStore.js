@@ -1,9 +1,10 @@
-import { createStore, combineReducers } from 'react-redux';
-import reducerForCategory, { actionForCategory } from './categories/categories';
-import reducer, { bookToAdd } from './books/books';
+import { createStore, combineReducers } from 'redux';
+import reducerForCategory, { checkStatus } from './categories/categories';
+import reducer, { bookToAdd, bookToRemove } from './books/books';
 
 const rootReducer = combineReducers({ books: reducer, categories: reducerForCategory });
 
 const store = createStore(rootReducer);
-store.dispatch(actionForCategory());
+store.dispatch(checkStatus());
 store.dispatch(bookToAdd());
+store.dispatch(bookToRemove());

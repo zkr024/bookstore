@@ -1,11 +1,10 @@
-const ACTIVE = 'ACTIVE';
-const NOT_ACTIVE = 'NOT_ACTIVE';
+const CHECK_STATUS = 'bookstore/categories/CHECK_STATUS';
 
-const actionForCategory = () => ({ type: NOT_ACTIVE });
+const checkStatus = () => ({ type: CHECK_STATUS });
 
 const reducerForCategory = (state = [], action) => {
   switch (action.type) {
-    case ACTIVE:
+    case CHECK_STATUS:
       return 'Under construction';
     default:
       return state;
@@ -13,4 +12,4 @@ const reducerForCategory = (state = [], action) => {
 };
 
 export default reducerForCategory();
-export { actionForCategory };
+export { checkStatus };

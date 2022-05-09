@@ -1,5 +1,5 @@
-const ADD_BOOK = 'ADD_BOOK';
-const REMOVE_BOOK = 'REMOVE_BOOK';
+const ADD_BOOK = 'bookstore/books/ADD_BOOK';
+const REMOVE_BOOK = 'bookstore/books/REMOVE_BOOK';
 
 const bookToAdd = (title, author) => ({
   type: ADD_BOOK,
@@ -19,7 +19,7 @@ const reducer = (initialState = [], action) => {
     case ADD_BOOK:
       return [...initialState, action.payload];
     case REMOVE_BOOK:
-      return [...initialState.filter((book) => (book.id !== action.id))];
+      return [...initialState.filter((book) => (book.id !== action.payload))];
     default:
       return initialState;
   }
