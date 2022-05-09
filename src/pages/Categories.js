@@ -1,5 +1,7 @@
+import CategoryButton from '../components/category/CategoryButton';
+
 const Categories = () => (
-  <button type="button">Check status</button>
+  <CategoryButton />
 );
 
 export default Categories;
