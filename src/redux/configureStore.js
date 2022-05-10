@@ -1,10 +1,8 @@
-import { createStore, combineReducers } from 'redux';
-import reducerForCategory, { checkStatus } from './categories/categories';
-import reducer, { bookToAdd, bookToRemove } from './books/books';
+import { combineReducers, legacy_createStore as createStore } from 'redux';
+import reducerForCategory from './categories/categories';
+import reducer from './books/books';
 
 const rootReducer = combineReducers({ books: reducer, categories: reducerForCategory });
-
 const store = createStore(rootReducer);
-store.dispatch(checkStatus());
-store.dispatch(bookToAdd());
-store.dispatch(bookToRemove());
+
+export default store;
