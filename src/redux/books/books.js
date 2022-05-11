@@ -1,20 +1,20 @@
 const ADD_BOOK = 'bookstore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookstore/books/REMOVE_BOOK';
 
-const bookToAdd = (title, author) => ({
-  type: ADD_BOOK,
-  payload: {
-    title,
-    author,
+export const initialArrayOfBooks = [
+  {
+    title: 'Lord of the Rings',
+    author: ' J. R. R. Tolkien',
+    id: 1,
   },
-});
+  {
+    title: 'Ready Player One',
+    author: 'Ernest Cline',
+    id: 2,
+  },
+];
 
-const bookToRemove = (id) => ({
-  type: REMOVE_BOOK,
-  payload: id,
-});
-
-const reducer = (initialState = [], action) => {
+const reducer = (initialState = initialArrayOfBooks, action) => {
   switch (action.type) {
     case ADD_BOOK:
       return [...initialState, action.payload];
@@ -25,5 +25,18 @@ const reducer = (initialState = [], action) => {
   }
 };
 
+const createActionForBookToAdd = (title, author) => ({
+  type: 'NON_ACTIVE',
+  payload: {
+    title,
+    author,
+  },
+});
+
+const createActionForBookToRemove = (id) => ({
+  type: REMOVE_BOOK,
+  payload: id,
+});
+
 export default reducer;
-export { bookToAdd, bookToRemove };
+export { createActionForBookToAdd, createActionForBookToRemove };
