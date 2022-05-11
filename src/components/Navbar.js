@@ -1,6 +1,7 @@
 import React from 'react';
 import { IoIosPerson } from 'react-icons/io';
 import { Link } from 'react-router-dom';
+import './style/Navbar.css';
 
 const Navbar = () => (
   <nav className="navbar">

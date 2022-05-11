@@ -36,7 +36,7 @@ const createActionForUpdateStore = (list) => ({
   payload: list,
 });
 
-const globalAppApi = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/ypxIDGTAyYvIOEECySyW/books';
+const globalAppApi = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/ylyOZNtzKhx5m56GASyM/books';
 
 export const postDataToApi = () => async (dispatch, getState) => {
   const identifyAddedBook = getState().books.length - 1;
