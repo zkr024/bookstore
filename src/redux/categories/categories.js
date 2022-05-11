@@ -1,13 +1,13 @@
 const ACTIVE = 'ACTIVE';
 
-const underCons = {
+const undeCons = {
   cons: 'Under construction',
 };
 
 const reducerForCategory = (state = '', action) => {
   switch (action.type) {
     case ACTIVE:
-      return underCons;
+      return undeCons;
     default:
       return state;
   }
