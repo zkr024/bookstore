@@ -1,0 +1,80 @@
+.section {
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+  width: 85%;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.section li {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.categorySection {
+  opacity: 0.4;
+  font-size: 19px;
+  font-family: "Montserrat", serif;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+
+.authorSection {
+  color: #4587c0;
+  padding-top: 4px;
+}
+
+.comments {
+  border: none;
+  color: #659ccb;
+  background-color: #fff;
+  padding: 25px 15px 15px 0;
+}
+
+.delete {
+  border-right: 1px solid #e8e8e8;
+  border-left: 1px solid #e8e8e8;
+  border-top: none;
+  border-bottom: none;
+  color: #659ccb;
+  background-color: #fff;
+  padding: 0 15px;
+}
+
+.delete:hover {
+  cursor: pointer;
+}
+
+.edit {
+  padding: 25px 15px 15px 15px;
+  border: none;
+  color: #659ccb;
+  background-color: #fff;
+}
+
+.status {
+  display: flex;
+  flex-direction: column;
+}
+
+.current {
+  font-family: "Montserrat", serif;
+  opacity: 0.4;
+}
+
+.completed {
+  font-family: "Montserrat", serif;
+  font-size: 18px;
+}
+
+.progress {
+  background-color: #0290ff;
+  color: #fff;
+  padding: 15px 50px;
+  border: none;
+  border-radius: 3px;
+  font-family: "Montserrat", serif;
+}

@@ -1,0 +1,32 @@
+.navContainer,
+.nav {
+  display: flex;
+}
+
+.navContainer {
+  justify-content: space-between;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 10px 7.5%;
+  background-color: #fff;
+}
+
+.navContainer h2 {
+  color: #0290ff;
+  font-family: "Montserrat", serif;
+  font-weight: 700;
+  font-size: 34px;
+}
+
+.nav {
+  list-style: none;
+  align-items: center;
+  gap: 30px;
+}
+
+.link {
+  text-decoration: none;
+  margin-right: 10px;
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  color: #363636;
+}

@@ -1,0 +1,14 @@
+.categoryArea {
+  padding: 20px;
+}
+
+.categoryButton {
+  border: 1px solid #e8e8e8;
+  padding: 7px 14px;
+  font-family: "Montserrat", serif;
+}
+
+.categoryButton:hover {
+  cursor: pointer;
+  background-color: #e6e6e6;
+}
